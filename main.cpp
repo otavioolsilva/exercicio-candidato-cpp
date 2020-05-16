@@ -24,5 +24,13 @@ int main()
     cout << "Voce tem habilitacao de motorista (S/N)? ";
     cin >> habilitacao;
 
+    //Escolaridade e experiencia
+    cout << endl << "Pontos por escolaridade: " << escolaridade*10 << endl;
+    if(experiencia <= 0) experiencia = 0;
+    else if(experiencia <= 2) experiencia = 10;
+    else if(experiencia <= 5) experiencia = 20;
+    else experiencia = 40;
+    cout << "Pontos por experiencia: " << experiencia << endl;
+
     return 0;
 }
