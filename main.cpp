@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    int escolaridade;
+    int escolaridade, experiencia;
+    string viajar, habilitacao;
 
     //Leitura da escolaridade
     cout << "Qual sua escolaridade?" << endl;
@@ -14,6 +15,14 @@ int main()
     cout << "4) Pos-graduacao" << endl;
     cout << "Digite uma opcao: ";
     cin >> escolaridade;
+
+    //Leitura dos demais dados
+    cout << endl << "Voce tem quantos anos de experiencia profissional? ";
+    cin >> experiencia;
+    cout << "Voce tem disponibilidade para viajar (S/N)? ";
+    cin >> viajar;
+    cout << "Voce tem habilitacao de motorista (S/N)? ";
+    cin >> habilitacao;
 
     return 0;
 }
